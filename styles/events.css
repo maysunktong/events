@@ -1,0 +1,87 @@
+:root{
+--color-main: rgb(250, 245, 114);
+--color-active: rgb(36, 238, 242);
+--color-secondary: darkolivegreen;
+--color-button-bg: blanchedalmond;
+}
+
+* {
+  box-sizing: border-box;
+  color: ;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: var(--color-main);
+  padding: 12px;
+  margin: 0;
+}
+
+.header__title{
+  text-align: center;
+  color: ;
+  margin: 0;
+}
+
+.animal-tabs {
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 12px;
+}
+
+.tab {
+  min-width: 140px;
+  text-align: center;
+  padding: 8px 12px;
+  margin: 8px;
+  border: 2px dotted var(--color-secondary);
+  background-color: var(--color-button-bg);
+  border-radius: 0.7rem;
+}
+
+footer {
+  font-size: 2rem;
+}
+
+footer span {
+  color: salmon;
+}
+
+footer p {
+  color: blue;
+}
+
+.active {
+  background-color: var(--color-active);
+}
+
+.main-content {
+  padding: 12px;
+  background-color: var(--color-secondary);
+  min-height: 300px; 
+  position: relative;
+}
+
+.content {
+  padding: 2rem;
+  background-color: var(--color-main);
+  border: white 2px dotted;
+  border-radius: 0.7rem; 
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+  transition: visibility 0.2s ease-in-out, opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.featured {
+  visibility: visible;
+  position: absolute;
+  opacity: 1; 
+}
